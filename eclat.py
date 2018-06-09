@@ -92,3 +92,4 @@ def eclat(transactions_list, output_filename, min_support = 0.002):
     return combo_support_vec
     
 combos_vs_supports = eclat(transactions, "./eclat.tsv", min_support = 0.002)
+# These 3 lines turn the rules into strings and add them to a list

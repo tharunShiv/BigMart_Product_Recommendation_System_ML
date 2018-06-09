@@ -46,6 +46,11 @@ rules = apriori(transactions, min_support = 0.003, min_confidence = 0.2, min_lif
 
 results = list(rules)
 
+# These 3 lines turn the rules into strings and add them to a list
+results_list = []
+for i in range(0, len(results)):
+    results_list.append('RULE:\t' + str(results[i][0]) + '\nSUPPORT:\t' + str(results[i][1]))
+    
 # in the results, index 0 is the most relevant rule
 # in the index 0
 # 2nd row is the support
